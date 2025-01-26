@@ -1,0 +1,30 @@
+/* .advantages */
+
+.advantages {
+    background-color: #819B57;
+    padding: 16px 0;
+
+    @media screen and (max-width: $phone){
+        background-color: #cfcfbc;
+        margin: 40px 21px 12px;
+        border-radius: 24px;
+    }
+
+    &__list {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+            font-size: 20px;
+            font-weight: 300;
+            color: #FAF4EA;
+
+            @media screen and (max-width: $phone) {
+                flex-wrap: wrap;
+                font-size: 14px;
+                gap: 16px;
+                color: var(--main-text-color);
+                padding: 24px 16px;
+            }
+        }
+}
+

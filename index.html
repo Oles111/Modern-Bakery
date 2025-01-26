@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./scss/main.min.css">
+    <title>Сучасна пекарня</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="shortcut icon" href="./favico.ico" type="image/x-icon">
+</head>
+<body>
+        <header class="header">
+            <div class="container container-header__nav">
+                <nav class="header__nav">
+                    <a href="#"><img src="./img/logo/logo.svg" alt="Logo"></a>
+                    <ul class="header__menu">
+                        <li><a class="header__menu-text" href="#traditions-section">Наші традиції</a></li>
+                        <li><a class="header__menu-text" href="#cooks-section">Шеф-кухарі</a></li>
+                        <li><a class="header__menu-text" href="#formats-section">Формати</a></li>
+                        <li><a class="header__menu-text" href="#contacts-section">Контакти</a></li>
+                    </ul>
+                </nav>
+                <button class="button header__button open-popup modal-btn-open" type="button">Замовити дзвінок</button>
+                <button class="header__burger menu-btn-open" type="button">
+                    <img src="./img/icons/menu.svg" alt="menu">
+                    <!-- <svg width="24" height="24">
+                        <use href="./img/icons/menu.svg"></use>
+                    </svg>  -->
+                </button>
+                <div class="mobile-menu">
+                    <button class="mobile-menu__btn-close menu-btn-close" type="button">
+                        <img src="./img/modal/modal-close.svg" alt="close">
+                    </button>
+                    <a class="mobile-menu__logo" href="#">
+                        <img src="./img/logo/mobile-logo.png" alt="Логотип сучасної пекарні">
+                    </a>
+                    <ul class="mobile-menu__list">
+                        <li><a class="mobile-menu__link" href="#traditions-section">Наші традиції</a></li>
+                        <li><a class="mobile-menu__link" href="#cooks-section">Шеф-кухарі</a></li>
+                        <li><a class="mobile-menu__link" href="#formats-section">Формати</a></li>
+                        <li><a class="mobile-menu__link" href="#contacts-section">Контакти</a></li>
+                    </ul>
+                </div>
+            </div>            
+        </header>
+        <main>
+            <!-- main-section -->
+            <section class="main-section">
+                <div class="container">
+                    <h1 class="main__title"><span>Сучасна</span> пекарня</h1>
+                    <button class="button main-section__button open-popup modal-btn-open1" type="button">Замовити дзвінок</button>
+                </div>                
+            </section><!-- main-section -->
+            <div class="advantages">
+                <div class="container">
+                    <ul class="advantages__list">
+                        <li>Великий попит на ринку</li>
+                        <li>Доступні за бюджетом формати</li>
+                        <li>Досвідчена управлінська команда</li>
+                    </ul>
+                </div>                
+            </div>
+            <!-- traditions-section -->
+            <section class="section traditions-section" id="traditions-section">
+                <div class="container">
+                    <div class="traditions">
+                        <div class="traditions__content">
+                            <h2 class="traditions-title section-title">Новий формат традицій</h2>
+                        <p class="traditions-text"><span>shop bakery</span> — це пекарня, яка взяла все найкраще, і зберегла смак традиційної випічки та натуральність
+                            інгредієнтів.</p>
+                        <p class="traditions-text text-limited">Ми працюємо як найвідоміші мережі—
+                            5 хвилин і замовлення готове.
+                            А ще у наших пекарень стильний дизайн
+                            та висока якість обслуговування!</p>
+                        </div>
+                        <img class="traditions__img" src="./img/section2/baker.jpg" alt="baker">
+                    </div>
+                </div>
+            </section><!-- traditions-section -->
+            <!--cooks-section -->
+            <section class="section cooks-section" id="cooks-section">
+                <div class="container">
+                    <h2 class="cooks-title section-title">Наші найкращі <br> <span>шеф -кухарі</span></h2>
+                        <ul class="cooks__cards">
+                            <li>
+                                <article class="cooks__card">
+                                    <img class="cooks-foto" src="./img/cooks-section/nastya-chef.jpg" alt="Настя">
+                                    <div class="cooks__card-text">
+                                        <h3 class="cooks__card-title">Настя</h3>
+                                        <p>Привіт, я Настя!</p>
+                                        <p>Вже 10 років, я втілюю
+                                            <br>
+                                            у життя цікаві та смачні ідеї.
+                                        </p>
+                                        <p>Я випічу для вас
+                                            <br>
+                                            найсмачніщі вироби!
+                                        </p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li>
+                                <article class="cooks__card">
+                                    <img class="cooks-foto" src="./img/cooks-section/vlad-chef.jpg" alt="Влад">
+                                    <div class="cooks__card-text">
+                                        <h3 class="cooks__card-title">Влад</h3>
+                                        <p>Привіт, я Влад!</p>
+                                        <p>Мій кодитерський стаж вже 18 років. SHOP BEKERY - це наша любов, з якою ми ділимось кожен раз з
+                                            Вами через нашу випічку!</p>
+                                        <p>Я зроблю для вас унікальну начинку на будь який смак!</p>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>                                       
+                </div>
+            </section><!--cooks-section -->
+            <!--formats-section -->
+            <section class="section formats-section" id="formats-section">
+                <div class="container">
+                    <h2 class="formats-title section-title">Формати</h2>
+                    <div class="formats-container formats-section__slider">
+                        <button class="formats-section__button slider-button carousel-button prev" type="button">
+                            <svg class="format-icon" width="16" height="16">
+                                <use href="./img/icons/symbol-defs2.svg#icon-arrow"></use>
+                            </svg>
+                        </button>
+                        <div class="formats-section__container swiper-container">
+                            <ul class="format-list swiper-wrapper">
+                                <li class="format-item swiper-slide">
+                                    <article class="format-card">
+                                        <img class="format-card__img" src="./img/formats-section/1.jpg" alt="Walrus">
+                                        <h3 class="format-title">Walrus</h3>
+                                        <div class="format-text">
+                                            <p>Площа: до 120 м2</p>
+                                            <p>Меню: розширене меню</p>
+                                            <p>Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2 офіціанти-різнороби</p>
+                                            <p>Посадкові місця: є</p>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li class="format-item swiper-slide">
+                                    <article class="format-card">
+                                        <img class="format-card__img" src="./img/formats-section/2.jpg" alt="Horseshoe">
+                                        <h3 class="format-title">Horseshoe</h3>
+                                        <div class="format-text">
+                                            <p>Площа: до 25 м2</p>
+                                            <p>Меню: найпопулярніші позиції меню</p>
+                                            <p>Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря</p>
+                                            <p>Посадкові місця: відсутні</p>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li class="format-item swiper-slide">
+                                    <article class="format-card">
+                                        <img class="format-card__img" src="./img/formats-section/3.jpg" alt="Handlebar">
+                                        <h3 class="format-title">Handlebar</h3>
+                                        <div class="format-text">
+                                            <p>Площа: до 15 м2</p>
+                                            <p>Меню: найпопулярніші позиції меню</p>
+                                            <p>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</p>
+                                            <p>Посадкові місця: відсутні</p>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li class="format-item swiper-slide">
+                                    <article class="format-card">
+                                        <img class="format-card__img" src="./img/formats-section/1.jpg" alt="Walrus">
+                                        <h3 class="format-title">Walrus</h3>
+                                        <div class="format-text">
+                                            <p>Площа: до 120 м2</p>
+                                            <p>Меню: розширене меню</p>
+                                            <p>Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2 офіціанти-різнороби</p>
+                                            <p>Посадкові місця: є</p>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li class="format-item swiper-slide">
+                                    <article class="format-card">
+                                        <img class="format-card__img" src="./img/formats-section/2.jpg" alt="Horseshoe">
+                                        <h3 class="format-title">Horseshoe</h3>
+                                        <div class="format-text">
+                                            <p>Площа: до 25 м2</p>
+                                            <p>Меню: найпопулярніші позиції меню</p>
+                                            <p>Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря</p>
+                                            <p>Посадкові місця: відсутні</p>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li class="format-item swiper-slide">
+                                    <article class="format-card">
+                                        <img class="format-card__img" src="./img/formats-section/3.jpg" alt="Handlebar">
+                                        <h3 class="format-title">Handlebar</h3>
+                                        <div class="format-text">
+                                            <p>Площа: до 15 м2</p>
+                                            <p>Меню: найпопулярніші позиції меню</p>
+                                            <p>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</p>
+                                            <p>Посадкові місця: відсутні</p>
+                                        </div>
+                                    </article>
+                                </li>
+                            </ul>
+                            <div class="pagination swiper-pagination-bullets swiper-pagination-horizontal">
+                                <span class="pagination__button"></span><span class="pagination__button"></span><span class="pagination__button"></span><span class="pb"></span>
+                            </div>
+                        </div>
+                        <button class="formats-section__button slider-button carousel-button next" type="button">
+                            <svg class="format-icon" width="16" height="16">
+                                <use href="./img/icons/symbol-defs2.svg#icon-arrow"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </section><!--formats-section -->
+            <!--contacts-section -->
+            <section class="section contacts-section" id="contacts-section">
+                <div class="container">
+                    <div class="contact-section__container">
+                        <div class="contact-section__form">
+                            <h2 class="contacts-title section-title">Приєднуйся до мережі пекарень</h2>
+                            <p class="contacts-text">Заповни форму, щоб ми звʼязались з тобою!</p>
+                            <form name="contact-form" autocomplete="off">
+                                <div class="contact-section__form-field input">
+                                    <label class="input__label visually-hidden" for="user-name"></label>
+                                    <input class="input__control" type="text" name="user-name" id="user-name" placeholder="Імʼя" required>
+                                </div>
+                                <div class="contact-section__form-field input">
+                                    <label class="input__label visually-hidden" for="user-tel">                                        
+                                    </label>
+                                    <input class="input__control" type="tel" name="user-tel" id="user-tel" placeholder="Телефон"
+                                        pattern="^\+[0-9]{12}" required />
+                                </div>
+                            
+                                <div class="contact-section__form-field input">
+                                    <label class="input__label visually-hidden" for="user-email">                               
+                                    </label>
+                                    <input class="input__control" type="email" name="user-email" id="user-email" placeholder="Електронна пошта"
+                                        required />
+                                </div>
+                                <button class="contact-section__button button" type="submit">
+                                    Замовити дзвінок
+                                </button>
+                                <p class="form-terms">
+                                    Натискаючи на кнопку я погоджуюсь з
+                                    <br>
+                                    <a class="form-terms__link" href="#">
+                                        політикою конфіденційності
+                                    </a>
+                                </p>
+                            </form>
+                        </div>
+                        <iframe class="contact-section__map"
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2540.1640531314047!2d30.4912335!3d50.4566697!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1701368879217!5m2!1sru!2sua"
+                            width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </section><!--contacts-section -->
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-container">
+                    <nav class="footer-nav">
+                        <div class="footer-logo">
+                            <a href="#"><img src="./img/logo/logo.svg" alt="Logo"></a>
+                        </div>
+                        <ul class="footer-menu footer__nav-items">
+                            <li><a class="footer__nav-link" href="#traditions-section">Наші традиції</a></li>
+                            <li><a class="footer__nav-link" href="#cooks-section">Шеф-кухарі</a></li>
+                            <li><a class="footer__nav-link" href="#formats-section">Формати</a></li>
+                            <li><a class="footer__nav-link" href="#contacts-section">Контакти</a></li>
+                        </ul>
+                    </nav>
+                    <address class="footer__address footer-address">
+                        <div class="address__list address-list">
+                            <ul class="address__list-items" >
+                                <li><a class="address-link" href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
+                                <li><a class="address-link" href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a></li>
+                                <li><a class="address-link" target="_blank" href="https://maps.app.goo.gl/HriTeQkwgu6nZwMe6">Україна, м. Київ,
+                                        вул. Січових Стрільців 54</a></li>
+                            </ul>
+                            <div class="footer-address__social">
+                                <li><a href="#">
+                                        <svg class="address-icon" width="32" height="32">
+                                            <use href="./img/icons/symbol-defs.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a></li>
+                                <li><a href="#">
+                                        <svg class="address-icon" width="32" height="32">
+                                            <use href="./img/icons/symbol-defs.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a></li>
+                            </div>
+                        </div>
+                        <div class="footer__address-info address-info">
+                            <a class="address-info__link" target="_blank" href="#">Політика конфіденційності</a>
+                            <p>© 2022 Дані захищені</p>
+                        </div>                    
+                    </address>
+                </div>
+            </div>
+        </footer>  
+        <div class="backdrop is-hidden">
+            <div id="modal" class="modal">
+                <div class="modal__body">
+                    <div class="modal__content">
+                        <!-- <a href="" class="modal__close"><img src="./img/modal/modal-close.svg" alt=""></a> -->
+                        <button type="button" class="modal__close modal-btn-close"><img src="./img/modal/modal-close.svg" alt="close"></button>
+                        <h2 class="modal__title">Замовити дзвінок</h2>
+                        <div class="modal__text"><p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p></div>
+                        <form class="modal__contact-form" name="contact-form" autocomplete="off">
+                            <div class="contact-section__form-field modal__form-field input">
+                                <label class="input__label visually-hidden" for="user-name"></label>
+                                <input class="input__control" type="text" name="user-name" id="user-name" placeholder="Імʼя" required>
+                            </div>
+                            <div class="contact-section__form-field modal__form-field input">
+                                <label class="input__label visually-hidden" for="user-tel">
+                                </label>
+                                <input class="input__control" type="tel" name="user-tel" id="user-tel" placeholder="Телефон"
+                                    pattern="^\+[0-9]{12}" required />
+                            </div>
+                        
+                            <div class="contact-section__form-field modal__form-field input">
+                                <label class="input__label visually-hidden" for="user-email">
+                                </label>
+                                <input class="input__control" type="email" name="user-email" id="user-email" placeholder="Електронна пошта"
+                                    required />
+                            </div>
+                            <button class="contact-section__button button" type="submit">
+                                Замовити дзвінок
+                            </button>
+                            <p class="form-terms modal__form-terms">
+                                Натискаючи на кнопку я погоджуюсь з
+                                <br>
+                                <a class="form-terms__link" href="#">
+                                    політикою конфіденційності
+                                </a>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js.js"></script>
+    <script src="./formats-slider.js"></script>
+    <script src="./mobile-menu.js"></script>
+</body>
+</html>

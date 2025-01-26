@@ -1,0 +1,59 @@
+/* traditions-section */
+
+.traditions {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+
+    @media screen and (max-width: $tablet) {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+    @media screen and (max-width: $phone) {
+        & p {
+            font-size: 16px;
+        }
+    }
+    
+
+    &__content {
+            max-width: 710px;
+            display: flex;
+            flex-direction: column;
+            gap: 42px;
+
+            @media screen and (max-width: $tablet) {
+                gap: 22px;
+            }
+        }
+}
+
+
+
+.traditions-title {
+    margin-bottom: 42px;
+
+    @media screen and (max-width: $tablet) {
+        text-align: center;
+        margin-bottom: 22px;
+    }
+}
+
+.traditions-text span {
+    text-transform: uppercase;
+    color: #819B57;
+}
+
+.text-limited {
+    max-width: 340px;
+}
+
+.traditions__img {
+    object-fit: contain;
+
+    @media screen and (max-width: $phone) {
+        display: none;
+    }
+}

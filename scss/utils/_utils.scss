@@ -1,0 +1,41 @@
+/* font-family: 'Poppins', sans-serif; */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: var(--main-text-color);
+    background-color: #FAF4EAB2;
+}
+
+.section {
+    padding: 48px 0;
+
+    @media screen and (max-width: $tablet) {
+        padding: 28px 0;
+    }
+
+    @media screen and (max-width: $phone) {
+        padding: 20px 0;
+    }
+}
+
+.container {
+    width: 100%;
+    max-width: 1288px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.section-title {
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 131.25%;
+    
+    @media screen and (max-width: $mdesktop) {            
+            font-size: 48px;            
+        }
+    @media screen and (max-width: $phone) {
+        font-size: 32px;
+    }
+}
+

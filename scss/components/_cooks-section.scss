@@ -1,0 +1,102 @@
+/* cooks-section */
+
+.cooks-title {
+    margin: 0 auto 80px;
+    text-align: center;
+    position: relative;
+
+    @media screen and (max-width: $tablet) {
+        margin-bottom: 24px;
+    }
+}
+
+.cooks-title span {
+    color: #819B57;
+}
+
+.cooks-title::before,
+.cooks-title::after {
+    position: absolute;
+    content: "";
+    width: 352px;
+    height: 2px;
+    background-color: #CFCFBC;
+    bottom: 24px;
+
+    @media screen and (max-width: $ldesktop) {
+        width: 25%;
+    }
+
+    @media screen and (max-width: $tablet) {
+        display: none;
+    }
+}
+
+.cooks-title::before {
+    left: 0px;
+}
+
+.cooks-title::after {
+    right: 0px;
+}
+
+.cooks__cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px 30px;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: $ldesktop) {
+        justify-content: center;
+    }
+}
+
+.cooks__card {
+    max-width: 605px;
+    display: flex;
+}
+
+.cooks-foto {
+    border-radius: 4px 4px 4px 200px;
+    box-shadow: -16px 16px 0 0 #fbf7f0, -16px 16px 0 2px #A18268;
+
+        @media screen and (max-width: $phone) {
+            border-radius: 2px 2px 2px 116px;
+                box-shadow: -8px 8px 0 0 #fbf7f0, -8px 8px 0 1px #a18268;
+        }
+}
+
+.cooks__card-text {
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    @media screen and (max-width: $ldesktop) {
+        max-width: 260px;
+    }
+}
+
+.cooks__card-title {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.5;
+
+    @media screen and (max-width: $phone) {
+        font-size: 24px;
+    }
+}
+
+.cooks__card img {
+    // object-fit: contain;
+    max-height: 390px;
+    @media screen and (max-width: $phone) {
+        max-height: 226px;
+    }
+}
+
+@media screen and (max-width: $phone) {
+    .cooks__card-text p {
+        font-size: 14px;
+    }
+}

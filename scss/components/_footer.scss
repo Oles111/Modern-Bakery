@@ -1,0 +1,185 @@
+/* footer */
+
+.footer {
+    position: relative;
+    background-image: url('../img/footer/footer-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--main-text-color);
+    padding: 32px 0;
+    overflow: hidden;
+    
+    &-container {
+            display: flex;
+            gap: 20px;
+
+            @media screen and (max-width: $phone) {
+                flex-wrap: wrap;
+                justify-content: center;
+                text-align: center;
+                font-size: 14px;
+            }
+    }
+
+    &-nav,
+    &-address {
+        display: flex;
+        flex-basis: 50%;
+        gap: 20px;
+
+        @media screen and (max-width: $tablet) {
+            flex-direction: column;
+            position: relative;
+            z-index: 2;
+        }
+        
+    }
+
+    &-logo {
+    flex-grow: 1;
+    }
+
+    &-menu {
+    flex-grow: 1;
+    }
+
+&::before {
+    position: absolute;
+    width: 180px;
+    height: 120px;
+    bottom: 0;
+    content: '';
+    background-image: url('../img/footer/footer-decor-1.png');
+    background-repeat: no-repeat;
+
+    @media screen and (max-width: $phone) {
+        width: 92px;
+        height: 196px;
+        top: 84px;
+        background-image: url('../img/footer/phonePhotoRoom2.png');
+    }
+}
+
+&::after {
+    position: absolute;
+    width: 380px;
+    height: 190px;
+    bottom: 0;
+    right: 0;
+    content: '';
+    background-image: url('../img/footer/footer-decor-2.png');
+    background-repeat: no-repeat;
+
+    @media screen and (max-width: $phone) {
+        width: 111px;
+        height: 120px;
+        bottom: -37px;
+        right: -36px;
+        background-image: url('../img/footer/phonePhotoRoom1.png');
+    }
+}
+
+}
+
+// .footer-container {
+//     display: flex;
+//     gap: 20px;
+// }
+
+// .footer-nav,
+// .footer-address {
+//     display: flex;
+//     flex-basis: 50%;
+//     gap: 20px
+// }
+
+// .footer-logo {
+//     flex-grow: 1;
+// }
+
+// .footer-menu {
+//     flex-grow: 1;
+// }
+
+// .footer::before {
+//     position: absolute;
+//     width: 180px;
+//     height: 120px;
+//     bottom: 0;
+//     content: '';
+//     background-image: url('../img/footer/footer-decor-1.png');
+//     background-repeat: no-repeat;
+// }
+
+// .footer::after {
+//     position: absolute;
+//     width: 380px;
+//     height: 190px;
+//     bottom: 0;
+//     right: 0;
+//     content: '';
+//     background-image: url('../img/footer/footer-decor-2.png');
+//     background-repeat: no-repeat;
+// }
+
+.address-list,
+.address-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 16px;
+}
+
+@media screen and (max-width: $phone) {
+    .address-info p {
+        font-size: 12px;
+        font-weight: 400;
+    }
+}
+
+.footer__nav-items,
+.address__list-items {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.address__list-items {
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.footer-address__social {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.address-icon {
+    fill: #FAF4EA;
+}
+
+.footer__nav-link,
+.address-link {
+    color: #FAF4EA;
+    transition: all 0.3s ease 0s;
+}
+
+.address-info__link {
+    color: #FAF4EA;
+}
+
+.address-info>p {
+    color: #A18268;
+}
+
+.footer__nav-link:hover,
+.address-link:hover {
+    color: #819B57;
+}
+
+@media screen and (max-width: $phone) {
+    .footer-logo img {
+        width: 72px;
+    }
+}
